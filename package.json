@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/main/api",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,8 @@
   "devDependencies": {
     "@types/module-alias": "^2.0.3",
     "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "eslint": "^8.52.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
