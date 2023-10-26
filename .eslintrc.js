@@ -8,7 +8,8 @@ module.exports = {
   },
   rules: {
     // Adicione regras personalizadas aqui (se necessário)
-
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-namespace": "off"
   },
   env: {
     node: true
